@@ -1,0 +1,13 @@
+
+Pour creer le zip (ca cree db.zip a la racine a partir de ce qu'il y a dans le dossier zip/) :
+- `make zip`
+
+Pour que ca marche, il faut qu'il y ait les dossiers suivants paper, coq, et hol a la racine.
+Donc soit tu fais toi meme le lien symbolique idoine, soit tu fais `make init` (qui va cloner 
+les depots, dont certains sont prives)
+
+Pour faire git pull dans paper/ coq/ et hol/
+- `make update`
+
+Pour les flemmards
+- `make updatezip`
