@@ -7,7 +7,7 @@ init:
 update:
 	cd paper; git pull
 	cd coq; git pull
-	cd hol; git pull
+	cd hol; git fetch origin; git checkout POPL2022; git merge origin/POPL2022
 zip:
 	@echo "Creation du zip db.zip a la racine"
 	zip -r db.zip zip -x "*/.*"
